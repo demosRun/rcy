@@ -1,0 +1,49 @@
+<template lang="pug">
+ul.card-list.clear
+  li(:for="3" o-hover="grow")
+    a(href="#")
+      img(src="https://cunchu.site/upload/6aeb17b2af1b0a93.jpeg")
+      //- p 填写文字
+</template>
+
+
+<style lang="less">
+:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.card-list {
+  width: 1200px;
+  height: auto;
+  li {
+    float: left;
+    margin-right: 29px;
+    margin-bottom: 15px;
+    img {
+      width: 380px;
+      height: 215px;
+      display: block;
+    }
+    p {
+      font-size: 16px;
+      text-align: center;
+      line-height: 20px;
+      overflow: hidden;
+      height: 20px;
+      color: black;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  li:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+</style>

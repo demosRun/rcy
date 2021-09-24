@@ -1,0 +1,166 @@
+<template>
+  <div class="otzlhz">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide card" :for="data._swiperList">
+            <img class="user" src="@|user.png|">
+            <span class="biaoqian">人民荐岗官</span>
+            <p>作为国家级新区（地区标签），雄安新区可以提供丰厚的人才政策支持，包括落户、租房补贴、相关医疗保健待遇（引才政策标签*3）等，人民网雄安分公司（公司名）提供补充医疗保险、员工宿舍、内部技能培训等多样福利（企业福利标签*3）。根据大数据分析计算，该职位与您的匹配度指数达到85%（为50-80%、仅为50%），强烈建议您进行应聘（您可进行尝试、匹配度较低，请谨慎尝试）。</p>
+        </div>
+      </div>
+    </div>
+    <div class="pagination clear"></div>
+  </div>
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      console.log(this.$el.getElementsByClassName('pagination')[0])
+      const cont = this.$el.getElementsByClassName('swiper-container')[0]
+      this.data.swiper = new Swiper(cont, {
+        "loop":true,
+        "autoplay":3000,
+        "slidesPerView": 1,
+        pagination: this.$el.getElementsByClassName('pagination')[0],
+        paginationClickable: true,
+      })
+    },
+    data: {
+      swiper: null,
+      _swiperList: [
+        {"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907120738032320874.jpg","title":"许正中", "text": "人民日报社副总编辑人民日报社副总编辑人民日报社副总编辑"},
+        {"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907113668180928777.jpg","title":"许正中", "text": "人民日报社副总编辑人民日报社副总编辑人民日报社副总编辑"},
+        {"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907113668180928777.jpg","title":"许正中", "text": "人民日报社副总编辑人民日报社副总编辑人民日报社副总编辑"},
+      ]
+    },
+    swiperNext: function () {
+      // console.log('swiperNext')
+      this.data.swiper.swipeNext ? this.data.swiper.swipeNext() : this.data.swiper.slideNext()
+    },
+    swiperPrev: function () {
+      // console.log('swiperPrev')
+      this.data.swiper.swipePrev ? this.data.swiper.swipePrev(): this.data.swiper.slidePrev()
+    }
+  }
+</script>
+
+<style lang="less">
+  .otzlhz {
+    height: 320px;
+    width: 1180px;
+    position: relative;
+    color: #333333;
+    margin: 0 auto;
+    .swiper-container {
+      height: 100%;
+      width: 1180px;
+      margin: 0  auto;
+      position: relative;
+      height: 320px;
+      padding-bottom: 10px;
+    }
+    .swiper-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+    .biaoqian {
+      background-color: #0676e7;
+      position: absolute;
+      width: 140px;
+      border-radius: 20px;
+      color: white;
+      line-height: 40px;
+      font-size: 16px;
+      left: 97px;
+      top: 250px;
+    }
+  }
+
+  .otzlhz {
+    position: relative;
+    .swiper-button {
+      position: absolute;
+      top: 0;
+      bottom: 30px;
+      margin: auto;
+      cursor: pointer;
+      z-index: 999;
+      background-image: none;
+    }
+  }
+  a {
+    color: #333333;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    img {
+      width: 100%;
+      height: 320px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  a:hover {
+    color: #333333;
+  }
+  .image-title {
+    overflow: hidden;
+    line-height: 30px;
+    font-size: 18px;
+    width: 100%;
+    margin: 0 auto;
+    color: #6a88d7;
+    border-bottom: 1px solid #6a88d7;
+    margin-bottom: 2px;
+  }
+  .swiper-slide {
+    position: relative;
+    .play-button {
+      position: absolute;
+      width: auto;
+      height: auto;
+      bottom: 60px;
+      left: 10px;
+    }
+    .user {
+      position: absolute;
+      left: 70px;
+      top: 50px;
+    }
+    p {
+      position: absolute;
+      font-size: 23px;
+      line-height: 35px;
+      text-align: left;
+      width: 845px;
+      right: 10px;
+      top: 55px;
+      text-indent: 2em;
+    }
+  }
+  .pagination {
+    width: 100%;
+    height: 16px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    z-index: 999;
+  }
+  .swiper-pagination-switch {
+    width: 50px;
+    height: 6px;
+    background-color: #cccccc;
+    float: left;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .swiper-active-switch {
+    background-color: #2085ec;
+  }
+</style>
