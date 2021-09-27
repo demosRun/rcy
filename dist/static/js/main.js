@@ -34,4 +34,3 @@ function switchIt (itemList, find, showBox, eventName) {
     }
   }
 }
-

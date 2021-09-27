@@ -84,7 +84,7 @@
 	"pageList": [
 		{
 			"name": "page",
-			"src": "./src/page/page3.owo",
+			"src": "./src/page/search.owo",
 			"type": "page"
 		}
 	],
