@@ -134,8 +134,75 @@
                     li 人才类别
                     li 支持方式
                     li 经济补贴
-  .bottom-box
-    plug(_name="module119" _src="https://template.owo.ink/84a645382bad88a3.owo")
+  .bottom-box.w1200
+    table(border="0")
+      tr
+        th(width="120px") 名称
+        th(width="120px") 类别
+        th(width="120px") 地区
+        th 内容
+        th(width="120px") 查看详情
+      tr
+        td 山东顶尖人才<br>组建团队支持政策
+        td 政策扶持
+        td 山东省<br>济南市
+        td.text 习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新
+        td
+      tr
+        td 山东顶尖人才<br>组建团队支持政策
+        td 政策扶持
+        td 山东省<br>济南市
+        td.text 习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新
+        td
+      tr
+        td 山东顶尖人才<br>组建团队支持政策
+        td 政策扶持
+        td 山东省<br>济南市
+        td.text 习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新
+        td
+      tr
+        td 山东顶尖人才<br>组建团队支持政策
+        td 政策扶持
+        td 山东省<br>济南市
+        td.text 习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新
+        td
+      tr
+        td 山东顶尖人才<br>组建团队支持政策
+        td 政策扶持
+        td 山东省<br>济南市
+        td.text 习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新
+        td
+      tr
+        td 山东顶尖人才<br>组建团队支持政策
+        td 政策扶持
+        td 山东省<br>济南市
+        td.text 习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新
+        td
+      tr
+        td 山东顶尖人才<br>组建团队支持政策
+        td 政策扶持
+        td 山东省<br>济南市
+        td.text 习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新
+        td
+      tr
+        td 山东顶尖人才<br>组建团队支持政策
+        td 政策扶持
+        td 山东省<br>济南市
+        td.text 习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新
+        td
+      tr
+        td 山东顶尖人才<br>组建团队支持政策
+        td 政策扶持
+        td 山东省<br>济南市
+        td.text 习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新
+        td
+      tr
+        td 山东顶尖人才<br>组建团队支持政策
+        td 政策扶持
+        td 山东省<br>济南市
+        td.text 习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新
+        td
+  plug(_name="module35" _src="https://template.owo.ink/67375e27bd1ad8d9.owo")
   plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
 </template>
 
@@ -250,6 +317,7 @@
   height: 500px;
   right: 0;
   display: none;
+  z-index: 9;
   .title-bar {
     line-height: 60px;
     text-align: left;
@@ -296,65 +364,30 @@
     display: block;
   }
 }
-.bottom-box {
-  background-image: url('@|bg-2.jpg|');
-  height: 1080px;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.swiper-slide-box {
-  background-image: url('@|card.png|');
-  width: 565px;
-  height: 189px;
-}
-.card-swiper-box-9 {
-  position: absolute;
-  left: 5%;
-  right: 0px;
-  margin: auto;
-  top: 1%;
-  bottom: 0;
-}
-.card-swiper-box-9 .swiper-slide .swiper-slide-box img {
-  width: 190px;
-  height: 100px;
-  position: absolute;
-  left: 30px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  border-radius: 10px;
-  overflow: hidden;
-  display: block;
-  background-color: transparent;
-}
-.lable-box span {
-  color: #ccc;
+table {
+  width: 100%;
+  margin-top: 40px;
   border: 1px solid #ccc;
-  width: 90px;
-  display: inline-block;
-  line-height: 24px;
-  float: left;
-  margin: 2px;
-  font-size: 12px;
+  font-size: 14px;
+  th {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #2085ed;
+  }
+  td {
+    height: 80px;
+  }
+  .text {
+    text-align: left;
+  }
 }
-.lable-box {
-  position: absolute;
-  width: 190px;
-  left: 236px;
-  top: 32px;
+table tr:nth-child(even){
+  background:#f8f8f8;
 }
-.info-box {
-  width: 190px;
-  position: absolute;
-  left: 234px;
-  bottom: 24px;
-  background-color: #449cf6;
-  color: white;
-}
-.info-2 {
-  background-color: #2085ec;
-  border-top: 1px solid #ccc;
+#copyright {
+  background-color: #fafbfd;
+  height: auto;
+  margin-top: 40px;
 }
 </style>
