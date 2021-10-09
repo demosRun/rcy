@@ -8,151 +8,22 @@
           .button-item.active(o-hover="grow") 登录
           .button-item(o-hover="grow") 注册
     img.main-bg(src="@|bg-3.jpg|")
-    .w1200
-      .title-bar
-        h2 企业待遇
-        h4 COMPANY PROFILE
-    .qiye-show(style="background-image: url('@|bg-4.png|');")
-      .info-bar
-        .zaizhao.item 15
-        .pipei.item 65%
-    .w1200
-      plug(_name="module147" _src="https://template.owo.ink/505bebdcae50a0df.owo")
-      .title-bar
-        h2 企业简介
-        h4 COMPANY PROFILE
-      .jianjie
-        p 人民网是《人民日报》建设的大型网上信息交互平台，是人民日报社控股的传媒文化上市公司，<br>是国际互联网上最大的综合性网络媒体之一。1997年1月1日，人民网正式上线。<br>人民网正力争成为内容科技领军企业，重构具有影响力和竞争力的党网平台。
-      .lab-box.clear
-        .item 五险一金
-        .item 有食堂
-        .item 有民族餐厅
-        .item 年度体检
-        .item 员工宿舍
-        .item 年终奖金
-        .item 健身设备
-        .item 红白礼金
-        .item 母婴室
-        .item 图书馆
-      .title-bar
-        h2 职位推荐
-        h4 COMPANY PROFILE
-      .tuijian-box
-        .qy-info
-          .title
-            h3 河北雄安分公司总经理
-            span 10-15K
-          .zw-info 全职 / 5年以上经验 / 大学本科以上 / 中共党员
-          p 工作职责： <br>1、负责清晰准确跟进、把控重点项目进度，协助总经理进行组织阶段性项目评审、结项评估 <br>2、负责协助驱动资源分配优化和问题解决，推动中心内部项目流程优化与工具化建设 <br>3、协助总经理建立项目团队有效的沟通机制，通过培训赋能提升团队项目管理能力 
-        .ppd 85%
-        .icon-box.clear
-          .icon-item(style="background-image: url('@|shoucang.png|');")
-            a(href="#")
-          .icon-item(style="background-image: url('@|toudi.png|');")
-            a(href="#")
-          .icon-item(style="background-image: url('@|xihuan.png|');")
-            a(href="#")
-    .zntg
+    .tjxx
       .w1200
-        .title-bar
-          h2 智能推荐
-          h4 COMPANY PROFILE
-        plug(_name="module162" _src="https://template.owo.ink/0503179e706d05fd.owo")
-    .w1200
-      .title-bar
-        h2 意向人才
-        h4 COMPANY PROFILE
-      .jyfx-box
-        h3 人民网面试评价
-        .pingfen-box2
-          .pingfen
-            .item
-              .lable 综合评分：
-              .connt
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.text 4.8
-                span.pingjia （来自585份评价）
-          .pingfen
-            .item
-              .lable 描述相符：
-              .connt
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.text 4.8
-            .item
-              .lable 面试官：
-              .connt
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.text 4.8
-            .item
-              .lable 公司环境：
-              .connt
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.start.start-1
-                span.text 4.8
-      .user-message
-        .card.clear
-          img.fl(src="@|user.png|")
-          .fr
-            .title
-              .name 王*秀
-              .lable 综合评分：
-              span.start.start-1
-              span.start.start-1
-              span.start.start-1
-              span.start.start-1
-              span.start.start-1
-              span.start.start-1
-              .lable 面试职位：
-              .text 文案策划
-              .gray （已下线）
-              .time 2021-08-24
-            .lable-bar
-              .item 福利待遇杠杠的
-              .item 面试官很nice
-              .item 环境高大上
-            p [面试过程] 面试总共三轮，一两天就出结果，除了部门专业面试和人力面试，还会有个线上考试包括行测、政治和职业能力测试。
-        .card.clear
-          img.fl(src="@|user.png|")
-          .fr
-            .title
-              .name 王*秀
-              .lable 综合评分：
-              span.start.start-1
-              span.start.start-1
-              span.start.start-1
-              span.start.start-1
-              span.start.start-1
-              span.start.start-1
-              .lable 面试职位：
-              .text 文案策划
-              .gray （已下线）
-              .time 2021-08-24
-            .lable-bar
-              .item 福利待遇杠杠的
-              .item 面试官很nice
-              .item 环境高大上
-            p [面试过程] 面试总共三轮，一两天就出结果，除了部门专业面试和人力面试，还会有个线上考试包括行测、政治和职业能力测试。
-
-  plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
+        .fl-box.clear
+          .fl
+            .city-img-box(style="background-image: url('@|city-logo.png|');")
+            plug(_name="module12" _src="https://template.owo.ink/9b8f7a56001921fd.owo")
+          .fr.tuijian
+            .title-bar
+              h2 名企推荐
+              h4 COMPANY PROFILE
+            .card-box
+              .card-item
+                img(src="@|mini-logo.png|")
+                .info
+                  h2 山东泰和水处理科技
+                  p 股份制公司  | 501~1000人 <br>石油/石化/化工| 在招18人
 </template>
 
 <script>
@@ -223,343 +94,48 @@
     line-height: 33px;
   }
 }
-.pipei-box {
-  .pipei-item {
-    .title {
-      background-color: #d4c8c8;
-      height: 40px;
-      line-height: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 18px;
-      padding: 0 20px;
-      color: #999;
-    }
+.city-img-box {
+  height: 220px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.tuijian {
+  width: 640px;
+  .title-bar {
+    text-align: left;
   }
-  .user-bar {
-    img {
-      width: 90px;
-      height: 90px;
-      overflow: hidden;
-      border-radius: 45px;
-    }
-  }
-  .bottom {
-    padding: 30px;
-  }
-  .user-bar {
+}
+.card-box {
+  .card-item {
+    background-image: url('@|card-2.png|');
+    width: 323px;
+    height: 110px;
     position: relative;
-  }
-  .user-info {
-    text-align: left;
-    margin-left: 20px;
-    h2 {
-      font-size: 20px;
-      line-height: 34px;
+    img {
+      position: absolute;
+      left: 25px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
     }
-    h4 {
-      font-size: 16px;
-      line-height: 30px;
-    }
-    .lable {
-      margin-top: 8px;
-      span {
-        border: 1px solid #ccc;
-        padding: 3px 15px;
-        border-radius: 15px;
-      }
-    }
-    
-  }
-  .pipei {
-    position: absolute;
-    right: 10px;
-    color: #2085ec;
-    font-size: 28px;
-    line-height: 40px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 40px;
-  }
-  .pipei-item {
-    border: 1px solid #ccc;
-  }
-  .jingli-card {
-    width: 50%;
-    text-align: left;
-    h3 {
-      font-size: 18px;
-      line-height: 40px;
-      margin-top: 20px;
-    }
-    .sty-1 {
-      padding: 0 20px;
-      padding-right: 40px;
-      margin-top: 20px;
-      li {
-        display: flex;
-        margin: 5px 0;
-        justify-content: space-between;
-      }
-      h4 {
-        display: inline;
-        font-size: 16px;
-      }
-      span {
-        color: #666;
-        font-size: 16px;
-        margin-left: 20px;
-      }
-      .right {
-        span {
-          border: 1px solid #ccc;
-          padding: 0 10px;
-          border-radius: 6px;
-          font-size: 12px;
-        }
-      }
-    }
-  }
-}
-.qiye-show {
-  height: 695px;
-  width: 100%;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  .info-bar {
-    background-image: url('@|qiye.png|');
-    width: 474px;
-    height: 695px;
-    background-position: center;
-    position: absolute;
-    right: 5%;
-  }
-  .zaizhao {
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 90px;
-    line-height: 100px;
-    height: 100px;
-    position: absolute;
-    top: 118px;
-    color: white;
-  }
-  .pipei {
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 90px;
-    line-height: 100px;
-    height: 100px;
-    position: absolute;
-    bottom: 167px;
-    color: white;
-  }
-}
-.card-list  {
-  margin-top: 20px;
-}
-.jianjie {
-  p {
-    font-size: 24px;
-    line-height: 58px;
-  }
-}
-.lab-box {
-  width: 1000px;
-  margin: 0 auto;
-  margin-top: 20px;
-  .item {
-    float: left;
-    width: 135px;
-    height: 45px;
-    background-image: linear-gradient(#3f88ed, #0db8fa);
-    line-height: 45px;
-    font-size: 20px;
-    color: white;
-    border-radius: 12px;
-    margin: 10px;
-  }
-}
-.tuijian-box {
-  width: 1200px;
-  height: 284px;
-  position: relative;
-  background-image: url('@|pipei-box.png|');
-  .qy-info {
-    text-align: left;
-    height: 210px;
-    width: 600px;
-    position: absolute;
-    top: 65px;
-    left: 40px;
-  }
-  .title {
-    h3 {
-      display: inline;
-      font-size: 24px;
-    }
-  }
-  span {
-    font-size: 24px;
-    color: #c70900;
-    margin-left: 10px;
-  }
-  .zw-info {
-    line-height: 30px;
-    font-size: 14px;
-    color: #999999;
-  }
-  p {
-    line-height: 22px;
-    font-size: 14px;
-    color: #999999;
-    margin-top: 10px;
-  }
-  .ppd {
-    position: absolute;
-    right: 62px;
-    font-size: 54px;
-    top: 72px;
-    line-height: 70px;
-    color: #cc0e1f;
-    font-weight: bold;
-  }
-  .icon-box {
-    position: absolute;
-    height: 100px;
-    width: 300px;
-    right: 20px;
-    bottom: 20px;
-    .icon-item {
-      width: 33%;
+    .info {
       height: 100%;
-      float: left;
-      background-repeat: none;
-      background-repeat: no-repeat;
-      background-position: center;
-      a {
-        display: block;
-      }
-    }
-  }
-}
-.zntg {
-  background-color: #fbfbfb;
-}
-.jyfx-box {
-  border-bottom: 1px solid #ccc;
-  border-style: dashed;
-  h3 {
-    text-align: left;
-    border-bottom: 1px solid #ccc;
-    font-size: 20px;
-    line-height: 60px;
-    color: #333;
-  }
-  .jyfx-box {
-    border-bottom: 1px solid #ccc;
-    border-style: dashed;
-  }
-  .pingfen {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    
-    .connt {
-      display: flex;
-      align-items: center;
-    }
-    .text {
-      font-size: 26px;
-      margin: 0 20px;
-    }
-    .item {
-      display: flex;
-      align-items: center;
-    }
-    .lable {
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .pingjia {
-      color: #666;
-      font-size: 17px;
-    }
-    
-  }
-}
-.user-message {
-  .card {
-    padding: 40px 0;
-    border-bottom: 1px solid #ccc;
-    border-style: dotted;
-  }
-  .fl {
-    width: 60px;
-    height: 60px;
-    margin: 20px;
-  }
-  .fr {
-    width: 1100px;
-    text-align: left;
-    .title {
-      display: flex;
-      align-items: center;
-      font-size: 18px;
-      position: relative;
-    }
-    .name {
-      width: 100px;
-    }
-    .lable {
-      margin-left: 10px;
-    }
-    .gray {
-      color: #ccc;
-    }
-    .time {
+      width: 230px;
       position: absolute;
       right: 0;
+      padding: 20px;
+      text-align: left;
     }
-    .lable-bar {
-      display: flex;
-      height: 50px;
-      align-items: center;
-      .item {
-        border: 1px solid #ccc;
-        border-radius: 23px;
-        font-size: 16px;
-        padding: 3px 10px;
-        color: #ccc;
-        height: 30px;
-        margin-right: 5px;
-      }
+    h2 {
+      line-height: 28px;
     }
     p {
-      font-size: 22px;
-      line-height: 36px;
+      line-height: 20px;
     }
   }
 }
-.start {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-}
-.start-1 {
-  background-image: url('@|start1.png|');
-}
-.start-2 {
-  background-image: url('@|start2.png|');
-}
-.start-3 {
-  background-image: url('@|start3.png|');
-}
-.pingfen-box2 {
-  padding: 20px 0;
+.tjxx {
+  background-color: #f7f7f7;
+  padding-top: 40px;
 }
 </style>

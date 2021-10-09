@@ -12,7 +12,7 @@
 		},
 		{
 			"name": "viewport",
-			"content": "width=1000, user-scalable=yes"
+			"content": "width=1200, user-scalable=yes"
 		},
 		{
 			"name": "format-detection",
@@ -84,7 +84,7 @@
 	"pageList": [
 		{
 			"name": "page",
-			"src": "./src/page/search.owo",
+			"src": "./src/page/city.owo",
 			"type": "page"
 		}
 	],

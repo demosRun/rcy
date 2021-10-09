@@ -1,294 +1,63 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+  <head>
+    <!-- 页面的元信息 -->
+    <title>测试预览页面</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=1200, user-scalable=yes"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="filetype" content="1"/>
+    <meta name="publishedtype" content="1"/>
+    <meta name="pagetype" content="2"/>
+    <meta name="description" content="{TAG_59447_TAG}"/>
+    <meta name="keywords" content="{TAG_59446_TAG}"/>
+    <meta name="catalogs" content="{TAG_83943_TAG}"/>
+    
+      <!-- 页面主样式文件 -->
+      <link charset="utf-8"  rel="stylesheet" href="./static/css/owo.core.css">
+      
+    <!-- 附属css文件 -->
+    <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+    <link rel="stylesheet" href="https://cunchu.site/ozzx/style/idangerous.swiper2.7.0.css" charset="utf-8">
+      
+  </head>
+  <body>
+    
+    <!-- 页面[page]-->
+    <div class="home page" template="page" style="display: block;"><div class="top-box"><div class="hrard"><div class="w1200 clear"><img class="logo fl" src="./static/images/logo.png"><div class="button-box fr"><div class="button-item active" o-hover="grow">登录</div><div class="button-item" o-hover="grow">注册</div></div></div></div><img class="main-bg" src="./static/images/bg-3.jpg"><div class="tjxx"><div class="w1200"><div class="fl-box clear"><div class="fl"><div class="city-img-box" style="background-image: url('./static/images/city-logo.png');"></div><div class="swiper-box" template="module12"><div class="swiper-container clear"><div class="swiper-wrapper"><div class="swiper-slide"><a href="#"><img src="https://cunchu.site/upload/de11264d737d7ae2.jpeg" width="500" height="280"><div class="text">全省“法治进校园”巡讲团首站——晋中</div></a></div><div class="swiper-slide"><a href="#"><img src="https://cunchu.site/upload/b166f050c3f2d45d.jpeg" width="500" height="280"><div class="text">全省“法治进校园”巡讲团首站——晋中</div></a></div><div class="swiper-slide"><a href="#"><img src="https://cunchu.site/upload/de78c150e6a6944d.jpeg" width="500" height="280"><div class="text">全省“法治进校园”巡讲团首站——晋中</div></a></div></div><div class="pagination"></div></div></div></div><div class="fr tuijian"><div class="title-bar"><h2>名企推荐</h2><h4>COMPANY PROFILE</h4></div><div class="card-box"><div class="card-item"><img src="./static/images/mini-logo.png"><div class="info"><h2>山东泰和水处理科技</h2><p>股份制公司&nbsp;&nbsp;|&nbsp;501~1000人&nbsp;<br>石油/石化/化工| 在招18人</p></div></div></div></div></div></div></div></div></div>
+    
+<!-- 框架script文件 -->
+<script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+owo.script = {
+  "page": {
+    "template": {
+      "module12": {
+        "created": function created() {
+          var _this = this;
 
-<head>
-  <!-- 页面的元信息 -->
-  <title>{TAG_14226_TAG}</title>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=1000, user-scalable=yes" />
-  <meta name="format-detection" content="telephone=no, email=no" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
-  <meta name="renderer" content="webkit" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="filetype" content="1" />
-  <meta name="publishedtype" content="1" />
-  <meta name="pagetype" content="2" />
-  <meta name="description" content="{TAG_59447_TAG}" />
-  <meta name="keywords" content="{TAG_59446_TAG}" />
-  <meta name="catalogs" content="{TAG_83943_TAG}" />
+          // 轮播图展示区域swiper
+          setTimeout(function () {
+            new Swiper(_this.$el.getElementsByClassName('swiper-container')[0], {
+              pagination: _this.$el.getElementsByClassName('pagination')[0],
+              loop: true,
+              autoplay: 3000,
+              paginationClickable: true
+            });
+          }, 0);
+        }
+      }
+    }
+  }
+};
+</script>
 
-  <!-- 页面主样式文件 -->
-  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.sxym9ft8jb.css">
+    <script src="https://cunchu.site/ozzx/script/idangerous.swiper2.7.0.min.js" type="text/javascript"  charset="UTF-8"></script>
+    <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script>
 
-  <!-- 附属css文件 -->
-  <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
-  <link rel="stylesheet" href="./static/images/idangerous.swiper2.7.0.css" charset="utf-8">
-
-</head>
-
-<body>
-
-  <!-- 页面[page]-->
-  <div class="home page" template="page" style="display: block;">
-    <div class="top-box">
-      <div class="hrard">
-        <div class="w1200 clear">
-          <img class="logo fl" src="./static/images/logo.png">
-          <div class="button-box fr">
-            <div class="button-item active" o-hover="grow">登录</div>
-            <div class="button-item" o-hover="grow">注册</div>
-          </div>
-        </div>
-      </div>
-      <div class="w1200">
-        <div class="search-box">
-          <div class="select-bar">
-            <input type="text" placeholder="请输入你要查询的地区或岗位信息">
-            <img class="search-button" src="./static/images/search-button.png" o-hover="grow">
-            <div class="more-button">
-              <div class="search-info">
-                <div class="title-bar">
-                  <span style="width: 19%;">地区</span>
-                  <span style="width: 27%;">地方人才政策</span>
-                  <span style="width: 27%;">行业</span>
-                  <span style="width: 27%;">企业福利</span>
-                </div>
-                <div class="scrrow-box clear">
-                  <ul class="scrrow-item card" style="width: 19%;">
-                    <li>济南</li>
-                    <li>青岛</li>
-                    <li>淄博</li>
-                    <li>枣庄</li>
-                    <li>东营</li>
-                    <li>济南</li>
-                    <li>青岛</li>
-                    <li>淄博</li>
-                    <li>济南</li>
-                    <li>青岛</li>
-                    <li>淄博</li>
-                    <li>枣庄</li>
-                    <li>东营</li>
-                    <li>济南</li>
-                    <li>青岛</li>
-                    <li>淄博</li>
-                  </ul>
-                  <div class="card clear" style="width: 27%;">
-                    <ul class="scrrow-item fl" style="width: 50%;">
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                    </ul>
-                    <ul class="scrrow-item fl nomer" style="width: 50%;">
-                      <li>经费资助</li>
-                      <li>生活补贴</li>
-                      <li class="active">经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li class="active">支持方式</li>
-                      <li>经济补贴</li>
-                      <li class="active">人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li class="active">人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                    </ul>
-                  </div>
-                  <ul class="scrrow-item card" style="width: 27%;">
-                    <li>互联网 | IT | 通讯</li>
-                    <li>销售 | 市场 | 客服</li>
-                    <li>经营管理 | 人事 | 行政 | 财务</li>
-                    <li>广告 | 媒体 | 艺术 | 出版</li>
-                    <li>教育 | 法律 | 咨询 | 翻译</li>
-                    <li>金融 | 保险</li>
-                    <li>互联网 | IT | 通讯</li>
-                    <li>销售 | 市场 | 客服</li>
-                    <li>经营管理 | 人事 | 行政 | 财务</li>
-                    <li>广告 | 媒体 | 艺术 | 出版</li>
-                    <li>教育 | 法律 | 咨询 | 翻译</li>
-                    <li>金融 | 保险</li>
-                    <li>互联网 | IT | 通讯</li>
-                    <li>销售 | 市场 | 客服</li>
-                    <li>经营管理 | 人事 | 行政 | 财务</li>
-                    <li>广告 | 媒体 | 艺术 | 出版</li>
-                    <li>教育 | 法律 | 咨询 | 翻译</li>
-                    <li>金融 | </li>
-                  </ul>
-                  <div class="card clear" style="width: 27%;">
-                    <ul class="scrrow-item fl" style="width: 50%;">
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                    </ul>
-                    <ul class="scrrow-item fl nomer" style="width: 50%;">
-                      <li>经费资助</li>
-                      <li>生活补贴</li>
-                      <li class="active">经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                      <li>人才类别</li>
-                      <li>支持方式</li>
-                      <li>经济补贴</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bottom-box w1200">
-      <table border="0">
-        <tbody>
-          <tr>
-            <th width="120px">名称</th>
-            <th width="120px">类别</th>
-            <th width="120px">地区</th>
-            <th>内容</th>
-            <th width="120px">查看详情</th>
-          </tr>
-          <tr>
-            <td>山东顶尖人才<br>组建团队支持政策</td>
-            <td>政策扶持</td>
-            <td>山东省<br>济南市</td>
-            <td class="text">习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>山东顶尖人才<br>组建团队支持政策</td>
-            <td>政策扶持</td>
-            <td>山东省<br>济南市</td>
-            <td class="text">习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>山东顶尖人才<br>组建团队支持政策</td>
-            <td>政策扶持</td>
-            <td>山东省<br>济南市</td>
-            <td class="text">习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>山东顶尖人才<br>组建团队支持政策</td>
-            <td>政策扶持</td>
-            <td>山东省<br>济南市</td>
-            <td class="text">习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>山东顶尖人才<br>组建团队支持政策</td>
-            <td>政策扶持</td>
-            <td>山东省<br>济南市</td>
-            <td class="text">习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>山东顶尖人才<br>组建团队支持政策</td>
-            <td>政策扶持</td>
-            <td>山东省<br>济南市</td>
-            <td class="text">习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>山东顶尖人才<br>组建团队支持政策</td>
-            <td>政策扶持</td>
-            <td>山东省<br>济南市</td>
-            <td class="text">习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>山东顶尖人才<br>组建团队支持政策</td>
-            <td>政策扶持</td>
-            <td>山东省<br>济南市</td>
-            <td class="text">习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>山东顶尖人才<br>组建团队支持政策</td>
-            <td>政策扶持</td>
-            <td>山东省<br>济南市</td>
-            <td class="text">习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>山东顶尖人才<br>组建团队支持政策</td>
-            <td>政策扶持</td>
-            <td>山东省<br>济南市</td>
-            <td class="text">习近平向2021中关村论坛视频致贺三个"共同"<br>习近平为科技创新指方向中关村国际前沿科技创新大赛纳入中关村论坛中关村论坛聚焦全球科技创新</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="pagination-bar clear">
-      <div class="pagination-box">
-        <a href="#">上一页</a>
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">下一页</a>
-        <span class="next">前往</span>
-        <input type="text">
-        <span>页</span>
-      </div>
-    </div>
-    <div id="copyright">人 民 网 版 权 所 有 ，未 经 书 面 授 权 禁 止 使 用<br>Copyright © 1997-2021 by www.people.com.cn. all rights reserved</div>
-  </div>
-
-
-  <script src="./static/js/idangerous.swiper2.7.0.min.js" type="text/javascript" charset="UTF-8"></script>
-  <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
-  <script src="./static/js/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
-
-</body>
-
+  </body>
 </html>
