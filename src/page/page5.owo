@@ -9,13 +9,137 @@
           .button-item(o-hover="grow") 注册
   .info-card
     .w1200
-      .lr-box
+      .lr-box.clear
         .lf
           .title-bar
             h2 移动端开发工程师
             span  8-16K
           p 山东省济南市高新区/ 经验3-5年 / 本科/ 年龄不限/ 招3-5人 / 全职
-
+          .tag-box.clear
+            .tag 五险一金
+            .tag 有食堂
+            .tag 有民族餐厅
+            .tag 年度体检
+            .tag 员工宿舍
+          .button-box
+            .button 投简历
+            .button.button-2 收藏
+  .w1200.lr-box.clear
+    .lf
+      .title-line 岗位职责
+      p 1、根据工作安排高效、高质地完成代码编写，确保符合规范的前端代码规范；
+      p 2、设计、编写可复用的用户界面组件、前端通用组件；
+      p 3、负责公司现有项目和新项目的前端修改调试和开发工作；
+      p 4、与设计团队紧密配合，能够实现实现设计师的设计想法；
+      p 5、与后端开发团队紧密配合，确保代码有效对接，优化网站前端性能；
+      p 6、跟踪移动前端技术的发展，掌握最新动态和主流技术；
+      p 7、能够不断的对前端代码进行优化，使网站符合SEO的要求； 
+      p 8、调试网站页面在不同浏览器下的兼容性；
+      .title-line 岗位要求
+      p 1、熟练掌握JavaScript，熟悉HTML5/XML/JSON前端开发技术，熟悉DIV CSS布局；
+      p 2、能使用原生的js或jQuery制作出页面常用的表现层动态效果,有node.js经验者优先；
+      p 3、对浏览器兼容性、代码可维护性、前端性能优化等有深入研究；
+      p 4、具有良好的代码风格和编程习惯；
+      p 5、精通DIV CSS流动布局的HTML代码编写，熟练手写标准WEB页面符合W3C标准；
+      p 6、熟练使用JavaScript和jQuery、Bootstrap等前端库，熟悉HTTP协议，能熟练使用Ajax编程；
+      p 7、能解决各种跨浏览器兼容性问题；
+      p 8、具备较强的独立解决问题能力、沟通能力、快速学习能力和抗压能力。
+      .title-line 工作地址
+      p 山东省济南市高新区财富中心AB座613-1室
+      .title-bar
+        h2 智能推荐
+      plug(_name="module162" _src="https://template.owo.ink/0503179e706d05fd2.owo")
+      .title-bar
+        h2 经验分享
+      .jyfx-box
+        h3 人民网面试评价
+        .pingfen-box2
+          .pingfen
+            .item
+              .lable 综合评分：
+              .connt
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.text 4.8
+                span.pingjia （来自585份评价）
+          .pingfen
+            .item
+              .lable 描述相符：
+              .connt
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.text 4.8
+            .item
+              .lable 面试官：
+              .connt
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.text 4.8
+            .item
+              .lable 公司环境：
+              .connt
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.start.start-1
+                span.text 4.8
+      .user-message
+        .card.clear
+          img.fl(src="@|user.png|")
+          .fr
+            .title
+              .name 王*秀
+              .lable 综合评分：
+              span.start.start-1
+              span.start.start-1
+              span.start.start-1
+              span.start.start-1
+              span.start.start-1
+              span.start.start-1
+              .lable 面试职位：
+              .text 文案策划
+              .gray （已下线）
+              .time 2021-08-24
+            .lable-bar
+              .item 福利待遇杠杠的
+              .item 面试官很nice
+              .item 环境高大上
+            p [面试过程] 面试总共三轮，一两天就出结果，除了部门专业面试和人力面试，还会有个线上考试包括行测、政治和职业能力测试。
+        .card.clear
+          img.fl(src="@|user.png|")
+          .fr
+            .title
+              .name 王*秀
+              .lable 综合评分：
+              span.start.start-1
+              span.start.start-1
+              span.start.start-1
+              span.start.start-1
+              span.start.start-1
+              span.start.start-1
+              .lable 面试职位：
+              .text 文案策划
+              .gray （已下线）
+              .time 2021-08-24
+            .lable-bar
+              .item 福利待遇杠杠的
+              .item 面试官很nice
+              .item 环境高大上
+            p [面试过程] 面试总共三轮，一两天就出结果，除了部门专业面试和人力面试，还会有个线上考试包括行测、政治和职业能力测试。
   plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
 </template>
 
@@ -31,7 +155,6 @@
 .top-box {
   
   .hrard {
-    position: absolute;
     top: 0;
     width: 100%;
     background-image: url('@|bg-6.png|');
@@ -65,5 +188,201 @@
     }
   }
 }
+.info-card {
+  background-color: #f7f7f7;
+  padding: 40px;
+  .title-bar {
+    font-size: 24px;
+    display: inline-block;
+    line-height: 50px;
+    h2 {
+      display: inline-block;
+    }
+  }
+  span {
+    color: #1c9bf4;
+    font-size: 28px;
+    margin-left: 20px;
+    display: inline-block;
+  }
+  p {
+    font-size: 18px;
+    line-height: 34px;
+  }
+  .button-box {
+    position: absolute;
+    right: 200px;
+    top: 20px;
+    .button {
+      background-color: #009fe9;
+      width: 120px;
+      line-height: 40px;
+      text-align: center;
+      color: white;
+      font-size: 17px;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+    .button-2 {
+      border: 1px solid #009fe9;
+      background-color: white;
+      color: #009fe9;
+    }
+  }
+}
+.tag-box {
+  margin-top: 20px;
+  .tag {
+    background-color: #289df3;
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    color: white;
+    float: left;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+}
+.title-line {
+  color: #043b78;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  border-left: 3px solid #043b78;
+  margin: 30px 0;
+  padding-left: 20px;
+}
+.title-bar {
+  background-image: url(@|title-line-2.png|);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  h2 {
+    line-height: 75px;
+    font-size: 28px;
+    color: #043b78;
+  }
+}
+.jyfx-box {
+  border-bottom: 1px solid #ccc;
+  border-style: dashed;
+  width: 760px;
+  h3 {
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    line-height: 60px;
+    color: #333;
+  }
+  .jyfx-box {
+    border-bottom: 1px solid #ccc;
+    border-style: dashed;
+  }
+  .pingfen {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    
+    .connt {
+      display: flex;
+      align-items: center;
+    }
+    .text {
+      font-size: 20px;
+      margin: 0 10px;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+    }
+    .lable {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .pingjia {
+      color: #666;
+      font-size: 17px;
+    }
+    
+  }
+  .start {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+  }
 
+  .start-1 {
+    background-image: url('@|start1.png|');
+  }
+
+  .start-2 {
+    background-image: url('@|start2.png|');
+  }
+
+  .start-3 {
+    background-image: url('@|start3.png|');
+  }
+
+  .pingfen-box2 {
+    padding: 20px 0;
+  }
+}
+.user-message {
+  width: 760px;
+  .card {
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc;
+    border-style: dotted;
+  }
+  .fl {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+  }
+  .fr {
+    width: 650px;
+    text-align: left;
+    .title {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      position: relative;
+      margin-bottom: 10px;
+    }
+    .name {
+      width: 100px;
+    }
+    .lable {
+      margin-left: 10px;
+    }
+    .gray {
+      color: #ccc;
+    }
+    .time {
+      position: absolute;
+      right: 0;
+    }
+    .lable-bar {
+      display: flex;
+      height: 50px;
+      align-items: center;
+      .item {
+        border: 1px solid #ccc;
+        border-radius: 23px;
+        font-size: 16px;
+        padding: 3px 10px;
+        color: #ccc;
+        height: 30px;
+        margin-right: 5px;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+}
 </style>
