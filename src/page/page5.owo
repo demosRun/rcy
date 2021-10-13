@@ -1,0 +1,69 @@
+<template lang="pug">
+.home
+  .top-box
+    .hrard
+      .w1200.clear
+        img.logo.fl(src="@|logo.png|")
+        .button-box.fr
+          .button-item.active(o-hover="grow") 登录
+          .button-item(o-hover="grow") 注册
+  .info-card
+    .w1200
+      .lr-box
+        .lf
+          .title-bar
+            h2 移动端开发工程师
+            span  8-16K
+          p 山东省济南市高新区/ 经验3-5年 / 本科/ 年龄不限/ 招3-5人 / 全职
+
+  plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+    }
+  }
+</script>
+
+
+<style lang="less">
+.top-box {
+  
+  .hrard {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: url('@|bg-6.png|');
+    .w1200 {
+      height: 80px;
+    }
+    .logo {
+      height: 54px;
+      margin: 13px;
+    }
+    .button-item {
+      display: inline-block;
+      background-color: white;
+      padding: 0px 27px;
+      border-radius: 15px;
+      font-size: 16px;
+      height: 30px;
+      line-height: 30px;
+      margin: 0 5px;
+      cursor: pointer;
+      box-shadow: 1px 1px 4px #564f4f;
+    }
+    .button-item.active {
+      background-color: #1c9bf4;
+      color: white;
+    }
+    .button-box {
+      height: 80px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+</style>
