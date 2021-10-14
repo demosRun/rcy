@@ -1,0 +1,769 @@
+<template lang="pug">
+.home
+  .top-box
+    .hrard
+      .w1200.clear
+        img.logo.fl(src="@|logo.png|")
+        .button-box.fr
+          .button-item.active(o-hover="grow") 登录
+          .button-item(o-hover="grow") 注册
+    img.main-bg(src="@|bg-3.jpg|")
+  .conn-box.w1000
+    .grxx.edit-box
+      h2 个人基本信息
+      .edit-button 编辑
+      .item-box.clear
+        .item.text
+          span 姓名*
+          input.text(type="text")
+        .item.text
+          span 性别*
+          select
+            option(value="男") 男
+            option(value="女") 女
+        .item.text
+          span 当前身份*
+          select
+            option(value="其它") 其它
+      .item-box.clear
+        .item.text
+          span 政治面貌*
+          select
+            option(value="其它") 其它
+        .item.text
+          span 学校名称*
+          input.text(type="text")
+        .item.text
+          span 最高学历*
+          select
+            option(value="其它") 其它
+      .item-box.clear
+        .item.text
+          span 所学专业*
+          input.text(type="text")
+        .item.text
+          span 在校时间*
+          .mini-select
+            select
+              option(value="其它") 其它
+            select
+              option(value="其它") 其它
+        .item.text
+          span 语言能力*
+          .mini-select
+            select
+              option(value="其它") 其它
+            select
+              option(value="其它") 其它
+    .grxx.edit-box
+      h2 期望工作地区及行业
+      .edit-button 编辑
+      .item-box.clear
+        .item.text
+          span 城市*
+          select
+            option(value="其它") 其它
+        .item.text
+          span
+          select
+            option(value="其它") 其它
+        .item.text
+          span 
+          select
+            option(value="其它") 其它
+      .item-box.clear
+        .item.text
+          span 行业*
+          select
+            option(value="其它") 其它
+    .grxx.edit-box
+      h2 期望获得的待遇与福利
+      .edit-button 编辑
+      .item-box.clear
+        .item.text
+          span 期望月薪*
+          .mini-select
+            select
+              option(value="其它") 最高
+            select
+              option(value="其它") 最低
+      .item-box.clear
+        .item.text
+          span 福利
+      .item-box.clear
+        .button-box.clear
+          .select-button 五险一金
+          .select-button 有食堂
+          .select-button.active 有民族餐厅
+          .select-button 年度体检
+          .select-button 员工宿舍
+          select.select-line
+            option(value="其它") 最低
+    .grxx.edit-box
+      h2 个人能力信息
+      .edit-button 编辑
+      .item-box.clear
+        .item.text
+          span 身体健康*
+          input.text(type="text")
+      .item-box.clear
+        .item.text
+          span 体育
+      .item-box.clear
+        .button-box.clear
+          .select-button.active 游泳
+          .select-button 篮球
+          .select-button 滑冰
+          .select-button 围棋
+          .select-button.active 跑步
+          .select-button 其它
+      .item-box.clear
+        .item.text
+          span 文艺
+      .item-box.clear
+        .button-box.clear
+          .select-button.active 演讲
+          .select-button 跳舞
+          .select-button 书法
+          .select-button 素描
+          .select-button.active 民族乐器
+          .select-button 其它
+      .item-box.clear
+        .item.text
+          span 第二外语
+      .item-box.clear
+        .button-box.clear
+          .select-button.active 法语
+          .select-button 英语
+          .select-button 阿拉伯语
+          .select-button 俄语
+          .select-button.active 西班牙语
+          .select-button 德语
+          .select-button 其它
+      .item-box.clear
+        .item.text
+          span 技能
+      .item-box.clear
+        .button-box.clear
+          .select-button.active 驾驶证
+          .select-button 计算机等级证书
+          .select-button 教师资格证
+          .select-button 导游资格证
+          .select-button 建造师
+          .select-button 其它
+      .item-box.clear
+        .item.text
+          span 办公软件操作能力
+      .item-box.clear
+        .button-box.clear
+          .select-button.active Word
+          .select-button Excel
+          .select-button PPT
+          .select-button Ps
+          .select-button Ae
+          .select-button 其它
+      .item-box.clear
+        .item.text
+          span 发表*
+      .item-box.clear
+        .edit-box-2
+          span 期刊
+          input(type="text")
+      .item-box.clear
+        .edit-box-2
+          span 专利
+          input(type="text")
+      .item-box.clear
+        .edit-box-2
+          span 媒体
+          input(type="text")
+      .item-box.clear
+        .item.text
+          span 学校经历*
+      .item-box.clear
+        .edit-box-2
+          span 学生干部职务
+          input(type="text")
+      .item-box.clear
+        .edit-box-2
+          span 大学服役经历
+          input(type="text")
+      .item-box.clear
+        .edit-box-2
+          span 双学位
+          input(type="text")
+      .item-box.clear
+        .edit-box-2
+          span 留学经历
+          input(type="text")
+      .item-box.clear
+        .item.text
+          span 志愿服务经历
+      .item-box.clear
+        .edit-box-2
+          input(type="text")
+      .item-box.clear
+        .item.text
+          span 获奖经历
+      .item-box.clear
+        .edit-box-2
+          input(type="text")
+  plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      $(".select-button").click(function(){
+        $(this).toggleClass("active");
+      });
+    }
+  }
+</script>
+
+
+<style lang="less">
+.top-box {
+  .hrard {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    .w1200 {
+      height: 80px;
+    }
+    .logo {
+      height: 54px;
+      margin: 13px;
+    }
+    .button-item {
+      display: inline-block;
+      background-color: white;
+      padding: 0px 27px;
+      border-radius: 15px;
+      font-size: 16px;
+      height: 30px;
+      line-height: 30px;
+      margin: 0 5px;
+      cursor: pointer;
+      box-shadow: 1px 1px 4px #564f4f;
+    }
+    .button-item.active {
+      background-color: #1c9bf4;
+      color: white;
+    }
+    .button-box {
+      height: 80px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.hrard {
+  border-bottom: 1px solid #ccc;
+}
+.main-bg {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.title-bar {
+  background-image: url('@|title-line.png|');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  h2 {
+    line-height: 30px;
+    font-size: 28px;
+    color: #043b78;
+  }
+  h4 {
+    line-height: 33px;
+  }
+}
+.pipei-box {
+  .pipei-item {
+    .title {
+      background-color: #d4c8c8;
+      height: 40px;
+      line-height: 40px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+      padding: 0 20px;
+      color: #999;
+    }
+  }
+  .user-bar {
+    img {
+      width: 90px;
+      height: 90px;
+      overflow: hidden;
+      border-radius: 45px;
+    }
+  }
+  .bottom {
+    padding: 30px;
+  }
+  .user-bar {
+    position: relative;
+  }
+  .user-info {
+    text-align: left;
+    margin-left: 20px;
+    h2 {
+      font-size: 20px;
+      line-height: 34px;
+    }
+    h4 {
+      font-size: 16px;
+      line-height: 30px;
+    }
+    .lable {
+      margin-top: 8px;
+      span {
+        border: 1px solid #ccc;
+        padding: 3px 15px;
+        border-radius: 15px;
+      }
+    }
+    
+  }
+  .pipei {
+    position: absolute;
+    right: 10px;
+    color: #2085ec;
+    font-size: 28px;
+    line-height: 40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 40px;
+  }
+  .pipei-item {
+    border: 1px solid #ccc;
+  }
+  .jingli-card {
+    width: 50%;
+    text-align: left;
+    h3 {
+      font-size: 18px;
+      line-height: 40px;
+      margin-top: 20px;
+    }
+    .sty-1 {
+      padding: 0 20px;
+      padding-right: 40px;
+      margin-top: 20px;
+      li {
+        display: flex;
+        margin: 5px 0;
+        justify-content: space-between;
+      }
+      h4 {
+        display: inline;
+        font-size: 16px;
+      }
+      span {
+        color: #666;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+      .right {
+        span {
+          border: 1px solid #ccc;
+          padding: 0 10px;
+          border-radius: 6px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+.qiye-show {
+  height: 695px;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  .info-bar {
+    background-image: url('@|qiye.png|');
+    width: 474px;
+    height: 695px;
+    background-position: center;
+    position: absolute;
+    right: 5%;
+  }
+  .zaizhao {
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 90px;
+    line-height: 100px;
+    height: 100px;
+    position: absolute;
+    top: 118px;
+    color: white;
+  }
+  .pipei {
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 90px;
+    line-height: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 167px;
+    color: white;
+  }
+}
+.card-list  {
+  margin-top: 20px;
+}
+.jianjie {
+  p {
+    font-size: 24px;
+    line-height: 58px;
+  }
+}
+.lab-box {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+  .item {
+    float: left;
+    width: 135px;
+    height: 45px;
+    background-image: linear-gradient(#3f88ed, #0db8fa);
+    line-height: 45px;
+    font-size: 20px;
+    color: white;
+    border-radius: 12px;
+    margin: 10px;
+  }
+}
+.tuijian-box {
+  width: 1200px;
+  height: 284px;
+  position: relative;
+  background-image: url('@|pipei-box.png|');
+  .qy-info {
+    text-align: left;
+    height: 210px;
+    width: 600px;
+    position: absolute;
+    top: 65px;
+    left: 40px;
+  }
+  .title {
+    h3 {
+      display: inline;
+      font-size: 24px;
+    }
+  }
+  span {
+    font-size: 24px;
+    color: #c70900;
+    margin-left: 10px;
+  }
+  .zw-info {
+    line-height: 30px;
+    font-size: 14px;
+    color: #999999;
+  }
+  p {
+    line-height: 22px;
+    font-size: 14px;
+    color: #999999;
+    margin-top: 10px;
+  }
+  .ppd {
+    position: absolute;
+    right: 62px;
+    font-size: 54px;
+    top: 72px;
+    line-height: 70px;
+    color: #cc0e1f;
+    font-weight: bold;
+  }
+  .icon-box {
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    right: 20px;
+    bottom: 20px;
+    .icon-item {
+      width: 33%;
+      height: 100%;
+      float: left;
+      background-repeat: none;
+      background-repeat: no-repeat;
+      background-position: center;
+      a {
+        display: block;
+      }
+    }
+  }
+}
+.zntg {
+  background-color: #fbfbfb;
+}
+.jyfx-box {
+  border-bottom: 1px solid #ccc;
+  border-style: dashed;
+  h3 {
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    line-height: 60px;
+    color: #333;
+  }
+  .jyfx-box {
+    border-bottom: 1px solid #ccc;
+    border-style: dashed;
+  }
+  .pingfen {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    
+    .connt {
+      display: flex;
+      align-items: center;
+    }
+    .text {
+      font-size: 26px;
+      margin: 0 20px;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+    }
+    .lable {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .pingjia {
+      color: #666;
+      font-size: 17px;
+    }
+    
+  }
+}
+.user-message {
+  .card {
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc;
+    border-style: dotted;
+  }
+  .fl {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+  }
+  .fr {
+    width: 1100px;
+    text-align: left;
+    .title {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      position: relative;
+    }
+    .name {
+      width: 100px;
+    }
+    .lable {
+      margin-left: 10px;
+    }
+    .gray {
+      color: #ccc;
+    }
+    .time {
+      position: absolute;
+      right: 0;
+    }
+    .lable-bar {
+      display: flex;
+      height: 50px;
+      align-items: center;
+      .item {
+        border: 1px solid #ccc;
+        border-radius: 23px;
+        font-size: 16px;
+        padding: 3px 10px;
+        color: #ccc;
+        height: 30px;
+        margin-right: 5px;
+      }
+    }
+    p {
+      font-size: 22px;
+      line-height: 36px;
+    }
+  }
+}
+.start {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.start-1 {
+  background-image: url('@|start1.png|');
+}
+.start-2 {
+  background-image: url('@|start2.png|');
+}
+.start-3 {
+  background-image: url('@|start3.png|');
+}
+.pingfen-box2 {
+  padding: 20px 0;
+}
+.edit-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 5px;
+  position: relative;
+  h2 {
+    font-size: 24px;
+    line-height: 52px;
+  }
+}
+
+.item-box {
+  margin-bottom: 10px;
+  .item {
+    float: left;
+    width: 290px;
+    span {
+      display: block;
+      font-size: 16px;
+      line-height: 32px;
+      height: 32px;
+    }
+    .text, select {
+      display: block;
+      border: 1px solid #ccc;
+      width: 200px;
+      margin-top: 5px;
+      height: 28px;
+      line-height: 28px;
+      padding: 0 10px;
+      position: relative;
+    }
+    select {
+      background-color: #f3f4f8;
+    }
+    .mini-select {
+      display: flex;
+      justify-content: space-between;
+      width: 200px;
+      background-image: url('@|line.png|');
+      background-repeat: no-repeat;
+      background-position: center 9px;
+      background-size: 20px;
+      select {
+        width: 80px;
+      }
+    }
+  }
+}
+.select-button {
+  background-color: #f3f4f8;
+  width: 110px;
+  padding: 0 10px;
+  line-height: 28px;
+  border-radius: 5px;
+  color: #000;
+  box-shadow: 1px 1px 5px #e5e2e2;
+  cursor: pointer;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+.select-button.active {
+  background-image: linear-gradient(#4186ed, #0db7fa);
+  color: white;
+}
+.select-button.active::after {
+  content:"";
+  background-image: url('@|check.png|');
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  background-size: 100%;
+  top: 0;
+  bottom: 0;
+  right: 3px;
+  margin: auto;
+}
+.edit-button {
+  background-color: #1b9bf4;
+  text-align: center;
+  width: 110px;
+  line-height: 35px;
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  cursor: pointer;
+}
+.select-line {
+  display: inline-block;
+  border: 1px solid #f3f4f8;
+  width: 150px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 10px;
+  background-color: #f3f4f8;
+  float: left;
+}
+.edit-box-2 {
+  border: 1px solid #ccc;
+  padding: 3px 7px;
+  border-radius: 5px;
+  display: flex;
+  height: 34px;
+  align-items: center;
+  position: relative;
+  span {
+    border-right: 1px solid #ccc;
+    height: 22px;
+    line-height: 22px;
+    padding-right: 10px;
+  }
+  input {
+    display: block;
+    width: calc(100% - 140px);
+    margin-left: 20px;
+  }
+}
+.edit-box-2::after {
+  content:"";
+  background-image: url('@|edit.png|');
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background-size: 100%;
+  top: 0;
+  bottom: 0;
+  right: 8px;
+  margin: auto;
+}
+.item-box .item .text {
+  background-image: url('@|edit.png|');
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  background-size: 13px;
+}
+select {
+  background-image: url('@|select.png|');
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  background-size: 20px;
+}
+</style>

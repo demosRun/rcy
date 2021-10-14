@@ -24,8 +24,8 @@
           .button-box
             .button 投简历
             .button.button-2 收藏
-  .w1200.lr-box.clear
-    .lf
+  .w1200.lr-box.clear.xinxi
+    .fl
       .title-line 岗位职责
       p 1、根据工作安排高效、高质地完成代码编写，确保符合规范的前端代码规范；
       p 2、设计、编写可复用的用户界面组件、前端通用组件；
@@ -140,6 +140,63 @@
               .item 面试官很nice
               .item 环境高大上
             p [面试过程] 面试总共三轮，一两天就出结果，除了部门专业面试和人力面试，还会有个线上考试包括行测、政治和职业能力测试。
+    .fr.right-info
+      .qiye-info.clear
+        .qiye-logo(style="background-image:url('@|qy.png|')")
+        span 公司名称公司名称
+      .lab-bar.clear
+        .lab 山东百强
+        .lab 名企
+      ul.icon-box
+        li 企业信息企业信息企业信息
+        li 企业信息企业信息企业信息
+        li 企业信息企业信息企业信息
+        li 企业信息企业信息企业信息
+      .title-bar
+        h2 智能推岗
+      .gangwei-card
+        .info 5-14k
+        h4 医药销售代表
+        p 济南市|经验不限|大专
+        p 鲁南制药集团股份有限公司
+      .gangwei-card
+        .info 5-14k
+        h4 医药销售代表
+        p 济南市|经验不限|大专
+        p 鲁南制药集团股份有限公司
+      .gangwei-card
+        .info 5-14k
+        h4 医药销售代表
+        p 济南市|经验不限|大专
+        p 鲁南制药集团股份有限公司
+      .gangwei-card
+        .info 5-14k
+        h4 医药销售代表
+        p 济南市|经验不限|大专
+        p 鲁南制药集团股份有限公司
+      .title-bar
+        h2 意见建议
+      .yjjy
+        h2 济南市委书记  孙立成
+        a.turn(href="") 查看简历
+        .jl-button-box.clear
+          .button 查看留言
+          .button.button-2 我要留言
+        p 年度总留言量：<span>628</span>条   年度公开回复量：<span>64</span>条
+      .yjjy
+        h2 济南市委书记  孙立成
+        a.turn(href="") 查看简历
+        .jl-button-box.clear
+          .button 查看留言
+          .button.button-2 我要留言
+        p 年度总留言量：<span>628</span>条   年度公开回复量：<span>64</span>条
+      .yjjy
+        h2 济南市委书记  孙立成
+        a.turn(href="") 查看简历
+        .jl-button-box.clear
+          .button 查看留言
+          .button.button-2 我要留言
+        p 年度总留言量：<span>628</span>条   年度公开回复量：<span>64</span>条
   plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
 </template>
 
@@ -213,22 +270,23 @@
     position: absolute;
     right: 200px;
     top: 20px;
-    .button {
-      background-color: #009fe9;
-      width: 120px;
-      line-height: 40px;
-      text-align: center;
-      color: white;
-      font-size: 17px;
-      margin: 10px 0;
-      cursor: pointer;
-    }
-    .button-2 {
-      border: 1px solid #009fe9;
-      background-color: white;
-      color: #009fe9;
-    }
+    
   }
+}
+.button {
+  background-color: #009fe9;
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.button-2 {
+  border: 1px solid #009fe9;
+  background-color: white;
+  color: #009fe9;
 }
 .tag-box {
   margin-top: 20px;
@@ -384,5 +442,98 @@
       line-height: 32px;
     }
   }
+}
+.xinxi .lf p {
+  font-size: 16px;
+  line-height: 26px;
+}
+.xinxi {
+  .right-info {
+    width: 380px;
+    .lab {
+      background-color: #e0eefc;
+      width: 100px;
+      text-align: center;
+      line-height: 25px;
+      color: #2085ec;
+      float: left;
+      margin-right: 10px;
+    }
+    .icon-box {
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .yjjy {
+      background-color: #eff1f7;
+      padding: 25px;
+      position: relative;
+      margin-bottom: 20px;
+      .turn {
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        color: #2085ec;
+        font-size: 16px;
+      }
+      .jl-button-box {
+        margin-top: 20px;
+        .button {
+          float: left;
+          margin-right: 30px;
+        }
+      }
+      p {
+        font-size: 14px;
+        margin-top: 20px;
+        span {
+          color: #2085ec;
+        }
+      }
+    }
+  }
+}
+.qiye-info {
+  margin-top: 40px;
+  .qiye-logo {
+    width: 80px;
+    height: 80px;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+  }
+  span {
+    display: inline-block;
+    line-height: 80px;
+    float: left;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+}
+.gangwei-card {
+  text-align: left;
+  padding: 15px;
+  position: relative;
+}
+.gangwei-card h4 {
+  font-size: 16px;
+  line-height: 32px;
+}
+.gangwei-card p {
+  line-height: 26px;
+  font-size: 14px;
+  color: #9e9ea0;
+}
+.gangwei-card .info {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  font-size: 18px;
+  color: #023c7b;
+}
+#copyright {
+  margin-top: 40px;
 }
 </style>
