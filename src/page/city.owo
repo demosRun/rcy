@@ -18,17 +18,145 @@
             .title-bar
               h2 名企推荐
               h4 COMPANY PROFILE
-            .card-box
+            .card-box.clear
               .card-item
                 img(src="@|mini-logo.png|")
                 .info
                   h2 山东泰和水处理科技
                   p 股份制公司  | 501~1000人 <br>石油/石化/化工| 在招18人
+              .card-item
+                img(src="@|mini-logo.png|")
+                .info
+                  h2 山东泰和水处理科技
+                  p 股份制公司  | 501~1000人 <br>石油/石化/化工| 在招18人
+              .card-item
+                img(src="@|mini-logo.png|")
+                .info
+                  h2 山东泰和水处理科技
+                  p 股份制公司  | 501~1000人 <br>石油/石化/化工| 在招18人
+              .card-item
+                img(src="@|mini-logo.png|")
+                .info
+                  h2 山东泰和水处理科技
+                  p 股份制公司  | 501~1000人 <br>石油/石化/化工| 在招18人
+              .card-item
+                img(src="@|mini-logo.png|")
+                .info
+                  h2 山东泰和水处理科技
+                  p 股份制公司  | 501~1000人 <br>石油/石化/化工| 在招18人
+              .card-item
+                img(src="@|mini-logo.png|")
+                .info
+                  h2 山东泰和水处理科技
+                  p 股份制公司  | 501~1000人 <br>石油/石化/化工| 在招18人
+    .conn-box
+      .w1200
+        .fl-box
+          .fl.grzx
+            .title-bar
+              h2 个人中心
+              h4 COMPANY PROFILE
+            .user-box
+              img(src="@|user-2.png|")
+              .bitton 点击登录
+          .fr.zcsd
+            .title-bar
+              h2 政策速递
+              h4 COMPANY PROFILE
+            .zhengce-box
+              .zc-title.clear
+                .title-item.fl 省本级策略
+                .title-item.fl 市本级策略
+              .zc-conn-box
+                .zc-conn.zc-conn-1.clear
+                  ul.fl.list
+
+                  ul.fr.panel 
+                .zc-conn.zc-conn-2
+                  .fl.list
+                  .fr.panel 
+        .show-box
+          img(src="@|show-1.png|")
+        .show-box
+          img(src="@|show-2.png|")
+        .title-bar(style="text-align: center;")
+          h2 城市名片
+          h4 COMPANY PROFILE
+        .nav-box.clear
+          .nav-item.fl(style="background-image: url('@|icon-1.png|');background-color: #002b71;")
+          .nav-item.fl(style="background-image: url('@|icon-2.png|');background-color: #0d54a4;")
+          .nav-item.fl(style="background-image: url('@|icon-3.png|');background-color: #2085ec;")
+      .img-box-box
+        .img-box(style="background-image: url('@|bg-7.png|');")
+          .w1200
+            .csjj(style="background-image: url('@|csjj.png|');")
+              h2 城市简介
+              h4 City profile
+        .img-box(style="background-image: url('@|bg-7.png|');")
+          .w1200
+            .csjj(style="background-image: url('@|csjj.png|');")
+              h2 优势产业
+              h4 City profile
+        .img-box(style="background-image: url('@|bg-7.png|');")
+          .w1200
+            .csjj(style="background-image: url('@|csjj.png|');")
+              h2 幸福指数
+              h4 City profile
+      .w1200
+        .title-bar(style="text-align: center;")
+          h2 意见建议
+          h4 COMPANY PROFILE
+  plug(_name="module2" _src="https://template.owo.ink/0d0151b82309f7a7.owo")
 </template>
 
 <script>
+  function changeZhengce (id) {
+    var urlencoded = new URLSearchParams();
+    urlencoded.append("area_id", "99");
+    urlencoded.append("tag_id", id || 1);
+    var requestOptions = {
+      method: 'POST',
+      body: urlencoded,
+      redirect: 'follow'
+    };
+
+    fetch("http://bp.people.com.cn/rencaiyun/api/policyNews", requestOptions)
+      .then(response => response.json())
+      .then(result => {
+        console.log(result)
+        let temp = ''
+        result.data.forEach(element => {
+          temp += `<li>${element.welfares}</li>`
+        });
+        document.querySelector('.zc-conn-1 .panel').innerHTML = temp
+      })
+      .catch(error => console.log('error', error));
+  }
   module.exports = {
     created: function () {
+      new tabIt(this.queryAll('.nav-box .nav-item'), this.queryAll('.img-box-box .img-box'), 'mouseover')
+      new tabIt(this.queryAll('.title-item'), this.queryAll('.zc-conn'), 'mouseover')
+      // 获取列表
+
+      var urlencoded = new URLSearchParams();
+
+      var requestOptions = {
+        method: 'POST',
+        body: urlencoded,
+        redirect: 'follow'
+      };
+
+      fetch("http://bp.people.com.cn/rencaiyun/api/welfareZone", requestOptions)
+        .then(response => response.json())
+        .then(result => {
+          console.log(result)
+          let temp = ''
+          result.data.forEach(element => {
+            temp += `<li onclick="changeZhengce(${element.id})">${element.name}</li>`
+          });
+          this.query('.fl.list').innerHTML = temp
+        })
+        .catch(error => console.log('error', error));
     }
   }
 </script>
@@ -101,6 +229,7 @@
 }
 .tuijian {
   width: 640px;
+  margin-top: 60px;
   .title-bar {
     text-align: left;
   }
@@ -108,9 +237,10 @@
 .card-box {
   .card-item {
     background-image: url('@|card-2.png|');
-    width: 323px;
+    width: 320px;
     height: 110px;
     position: relative;
+    float: left;
     img {
       position: absolute;
       left: 25px;
@@ -137,5 +267,115 @@
 .tjxx {
   background-color: #f7f7f7;
   padding-top: 40px;
+}
+.zcsd {
+  width: 820px;
+}
+.grzx {
+  width: 340px;
+}
+.show-box {
+  margin-top: 30px;
+  img {
+    display: block;
+  }
+}
+.nav-box {
+  .nav-item {
+    width: 33%;
+    height: 120px;
+    background-color: #002b71;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.img-box {
+  height: 487px;
+  background-size: auto 487px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.csjj {
+  position: absolute;
+  height: 487px;
+  width: 400px;
+  left: 0;
+  padding: 70px;
+  h2 {
+    font-size: 30px;
+    color: #2085ec;
+    line-height: 40px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 40px;
+    color: #cccccc;
+  }
+}
+.user-box {
+  width: 340px;
+  height: 400px;
+  box-shadow: 1px 1px 3px #ccc;
+  border: 1px solid #ede9e9;
+  img {
+    margin: 50px 115px;
+  }
+  .bitton {
+    background-color: #009fe9;
+    text-align: center;
+    line-height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+}
+.zc-title {
+  .title-item {
+    height: 50px;
+    width: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: black;
+  }
+  .active {
+    background-color: #2085ec;
+    color: white;
+  }
+}
+.zc-conn {
+  height: 350px;
+  .list, .panel {
+    height: 100%;
+  }
+  .panel {
+    width: 610px;
+    padding: 10px;
+    li {
+      font-size: 18px;
+      line-height: 30px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      border-style: dashed;
+    }
+  }
+  .list {
+    width: 200px;
+    border-right: 1px solid #ccc;
+    li {
+      line-height: 50px;
+      text-align: center;
+      font-size: 18px;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+    }
+  }
+}
+.zhengce-box {
+  box-shadow: 1px 1px 3px #ccc;
+  border: 1px solid #ede9e9;
 }
 </style>
